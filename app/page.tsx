@@ -11,7 +11,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <img src="/chopin-logo.png" alt="Chopin Logo" className="h-10 w-auto" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Chopin
+              </span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <Link href="#solution" className="text-gray-700 hover:text-indigo-600 font-medium transition-colors">
@@ -43,6 +45,13 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            {/* Logo in Hero Section - Enhanced */}
+            <div className="flex justify-center mb-12">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20 hover:shadow-3xl transition-all duration-300">
+                <img src="/chopin-logo.png" alt="Chopin Logo" className="h-32 w-auto md:h-40 lg:h-48 drop-shadow-lg" />
+              </div>
+            </div>
+
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full text-sm font-medium mb-8 shadow-lg">
               <Star className="w-4 h-4 mr-2" />
               Meet Chopin
@@ -458,7 +467,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0">
-              <img src="/chopin-logo.png" alt="Chopin" className="h-12 w-auto" />
+              <img src="/chopin-logo.png" alt="Chopin" className="h-16 w-auto" />
             </div>
             <div className="text-purple-200 text-center md:text-right">
               <p className="text-lg font-medium">© 2024 Chopin</p>
