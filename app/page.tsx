@@ -45,10 +45,23 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            {/* Logo in Hero Section - Enhanced */}
-            <div className="flex justify-center mb-12">
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20 hover:shadow-3xl transition-all duration-300">
-                <img src="/chopin-logo.png" alt="Chopin Logo" className="h-32 w-auto md:h-40 lg:h-48 drop-shadow-lg" />
+            {/* Logo in Hero Section - Maximum Enhanced */}
+            <div className="flex justify-center mb-16">
+              <div className="relative bg-white/95 backdrop-blur-md rounded-[2rem] p-12 md:p-16 lg:p-20 shadow-[0_20px_60px_rgba(0,0,0,0.15)] border-2 border-white/30 hover:shadow-[0_30px_80px_rgba(0,0,0,0.2)] transition-all duration-500 hover:scale-105">
+                {/* Glow effect background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400/20 via-purple-400/20 to-pink-400/20 rounded-[2rem] blur-xl"></div>
+
+                {/* Logo with maximum visibility */}
+                <div className="relative z-10">
+                  <img
+                    src="/chopin-logo.png"
+                    alt="Chopin Logo"
+                    className="h-40 w-auto md:h-56 lg:h-72 xl:h-80 drop-shadow-2xl filter brightness-110 contrast-110 saturate-110"
+                  />
+                </div>
+
+                {/* Additional highlight border */}
+                <div className="absolute inset-0 rounded-[2rem] border-4 border-gradient-to-r from-indigo-300/50 via-purple-300/50 to-pink-300/50"></div>
               </div>
             </div>
 
